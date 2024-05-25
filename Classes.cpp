@@ -72,10 +72,6 @@ void Classes::initCharacter(int vigorBar, int dexterityAtt, int strengthAtt, int
 
 void Classes::constructCharacter(std::string userType, std::map<std::string,int> mapUser) {
 
-    std::cout << "teste para saber se o dicionario esta funcionando corretamente" << std::endl;
-
-    std::cout << mapUser[userType] << std::endl;
-
     switch (mapUser[userType])
     {
     case 0:
@@ -88,21 +84,74 @@ void Classes::constructCharacter(std::string userType, std::map<std::string,int>
         initCharacter(11, 12, 10, 15, 11);
         break;
     case 3:
-        initCharacter(12, 13, 11, 12, 15);
+        initCharacter(11, 12, 11, 12, 15);
         break;
     }
 }
 
 void Classes::showAttributes() {
-    std::cout << "VIG " <<"************** " << vigor << " **************" << std::endl;
-    std::cout << "DEX " <<"************** " << dexterity << " **************" << std::endl;
-    std::cout << "STR " <<"************** " << strength << " **************" << std::endl;
-    std::cout << "INT " <<"************** " << intelligence << " **************" << std::endl;
-    std::cout << "LCK " <<"************** " << luck << " **************" << std::endl;   
+
+    std::cout << "VIG " <<"*\\(v.v)/*   " << vigor << "   *\\(v.v)/*" << std::endl;
+    std::cout << "DEX " <<"(->*=*)->   " << dexterity << "   (->*=*)->" << std::endl;
+    std::cout << "STR " <<"(+)|-\\/-|=> " << strength << "   (+)|-\\/-|=>" << std::endl;
+    std::cout << "INT " <<"(^-.-)-V    " << intelligence << "   (^-.-)-V" << std::endl;
+    std::cout << "LCK " <<"~(*v*)~     " << luck << "   ~(*v*)~" << std::endl;   
 }
 
 void Classes::showAvailableClasses() {
-    std::cout << "These are the available classes: " << std::endl;
+    std::cout << std::endl;
+    std::cout << "These are the available classes and your greatest skills" << std::endl;
+    std::cout << std::endl;
 
+    std::cout << "Ladino: Dexterity" << " initial status: V:12, D:15, S:11, I:11, L:14"<< std::endl;
+    std::cout << "Warrior: Strength" << " initial status: V:14, D:11, S:15, I:11, L:10" << std::endl;
+    std::cout << "Alquimist: Intelligence" << " initial status: V:11, D:12, S:10, I:15, L:11" << std::endl;
+    std::cout << "Bardo: Luck" << " initial status: V:11, D:12, S:11, I:12, L:15" << std::endl;
+
+    std::cout << std::endl;
 }
+
+void Classes::pseudoMenu() {
+    std::cout << std::endl;
+
+    std::cout << "0: ------------------- Starts the game" << std::endl;
+    std::cout << "1: Show all classes and the attributes" << std::endl;
+    std::cout << "2: --------- Learn more about the lore" << std::endl;
+    
+    std::cout << std::endl;
+}
+
+void Classes::whileNotStart(int& notStart) {
+    
+    while (notStart) {
+        
+        if (notStart != 0) {
+            pseudoMenu();
+        }
+
+        switch (notStart) {
+            case 1:
+                showAvailableClasses();
+                break;
+
+            case 2:
+                std::cout << "Certainlly you will know more if you play the game :)" << std::endl;
+                break;
+        }
+        std::cout << "insert your option" << std::endl;
+        std::cin >> notStart;
+
+    }
+}
+
+void Classes::startTheGame() {
+    std::cout << "The game will start" << std::endl;
+    int startCommand = 1000;
+
+    whileNotStart(startCommand);
+
+    }
+
+
+
 

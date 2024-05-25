@@ -21,6 +21,8 @@ private:
     void defineLuck(int LuckAtt);
     void initCharacter(int vigorBar, int dexterityAtt, int strengthAtt, int IntAtt, int LuckAtt);
     void constructCharacter(std::string userType, std::map<std::string,int> mapUser);
+    static void pseudoMenu();
+    static void whileNotStart(int& startCommand);
 
 public:
     Classes();
@@ -33,5 +35,7 @@ public:
     void chooseCharacterType(std::string& userType);
     void showAttributes();
     static void showAvailableClasses();
+    static void startTheGame();
+
 
 };
