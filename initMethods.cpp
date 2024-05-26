@@ -1,6 +1,4 @@
 #include "initMethods.hpp"
-#include <fcntl.h>
-#include <io.h>
 
 // Font Name: Delta
 void HuntingKingGame::printInitGame() {

@@ -149,8 +149,7 @@ void Classes::startTheGame() {
     int startCommand = 1000;
 
     whileNotStart(startCommand);
-
-    }
+}
 
 
 
