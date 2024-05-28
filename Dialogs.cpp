@@ -5,8 +5,8 @@ std::string Dialogs::textCase;
 std::map<std::string,int> Dialogs::textFormatSwitcher = {{"small",0},{"medium",1},{"big",2}};
 
 void Dialogs::printDesign(std::string dialog) {
-    for (int idx = 0; idx << (int) stringShapeAnalysis(dialog); idx++) {
-        if (!idx || (idx == (int) stringShapeAnalysis(dialog) - 1)) {
+    for (int idx = 0; idx < (int) stringShapeAnalysis(dialog) + 4; idx++) {
+        if (!idx || (idx == (int) stringShapeAnalysis(dialog) + 3)) {
             std::cout << "+";
         } else {
             std::cout << "-";
@@ -15,12 +15,29 @@ void Dialogs::printDesign(std::string dialog) {
     std::cout << std::endl;
 }
 
+// std::string Dialogs::completWithBlankSpaces(int lastNumber, std::string dialog) {
+//     int size = dialog.size() - lastNumber;
+//     std::string str("");
+
+//     for (int idx = 0; idx < size; idx++) {
+//         str += " ";
+//     }
+//     str += "|";
+
+//     return str;
+// }
+
 void Dialogs::formatAndShowDialog(std::string dialog) {
 
     double sqrtSize = (int) stringShapeAnalysis(dialog);
 
-    for (int idx = 0; idx < sqrtSize; idx++) {
-        std::cout << "| " << dialog.substr(idx * (sqrtSize-2), (idx+1) * (sqrtSize-2)) << " |" << std::endl;
+    for (int idx = 0; idx < sqrtSize + 1; idx++) {
+        if (idx == sqrtSize) {
+            std::cout << "| " << dialog.substr(idx * (sqrtSize)) << std::endl;
+            // completWithBlankSpaces(idx * sqrtSize, dialog) << std::endl;
+            break;
+        }
+        std::cout << "| " << dialog.substr(idx * (sqrtSize), (sqrtSize)) << " |" << std::endl;
     }
 }
 
