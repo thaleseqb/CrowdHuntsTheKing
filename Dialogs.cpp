@@ -15,29 +15,33 @@ void Dialogs::printDesign(std::string dialog) {
     std::cout << std::endl;
 }
 
-// std::string Dialogs::completWithBlankSpaces(int lastNumber, std::string dialog) {
-//     int size = dialog.size() - lastNumber;
-//     std::string str("");
+std::string Dialogs::completWithBlankSpaces(int lastNumber, std::string dialog) {
+    int size = (int) stringShapeAnalysis(dialog) - lastNumber;
+    std::string str("");
 
-//     for (int idx = 0; idx < size; idx++) {
-//         str += " ";
-//     }
-//     str += "|";
+    for (int idx = 0; idx < size; idx++) {
+        str += " ";
+    }
+    str += " |";
 
-//     return str;
-// }
+    return str;
+}
 
 void Dialogs::formatAndShowDialog(std::string dialog) {
 
-    double sqrtSize = (int) stringShapeAnalysis(dialog);
+    int sqrtSize = (int) stringShapeAnalysis(dialog);
+    double fracNumber = (dialog.size() / sqrtSize) - sqrtSize;
+    int n = (int) fracNumber + 1;
+    int range = sqrtSize + n;
 
-    for (int idx = 0; idx < sqrtSize + 1; idx++) {
-        if (idx == sqrtSize) {
-            std::cout << "| " << dialog.substr(idx * (sqrtSize)) << std::endl;
-            // completWithBlankSpaces(idx * sqrtSize, dialog) << std::endl;
+    for (int idx = 0; idx < range; idx++) {
+        if (idx == range-1) {
+            std::cout << "| " << dialog.substr(idx * (sqrtSize)) <<
+            completWithBlankSpaces(dialog.substr(idx* sqrtSize).size(), dialog) << std::endl;
             break;
         }
         std::cout << "| " << dialog.substr(idx * (sqrtSize), (sqrtSize)) << " |" << std::endl;
+        
     }
 }
 
@@ -57,8 +61,7 @@ std::map<std::string,int> Dialogs::getTextFormatSwitcher() {
 
 double Dialogs::stringShapeAnalysis(std::string dialog) {
 
-    int stringSize = dialog.size();
-    return sqrt(stringSize);
+    return sqrt(dialog.size());
 
 }
 

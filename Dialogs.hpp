@@ -11,7 +11,7 @@ class Dialogs {
     static void printDesign(std::string dialog);
     static void formatAndShowDialog(std::string dialog);
     static void createTextBox(std::string dialog);
-    // static std::string completWithBlankSpaces(int lastNumber, std::string dialog);
+    static std::string completWithBlankSpaces(int lastNumber, std::string dialog);
 
     public:
     static void selectCaseForTextBoxes(std::string dialog, std::map<std::string,int> textFormatSwitcher);
