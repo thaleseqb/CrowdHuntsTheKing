@@ -4,171 +4,163 @@
 // link: https://www.asciiart.eu/ || https://asciiart.website/index.php?art=objects/bottles
 
 void ASCImages::ladinoAttack() {
-    std::cout << LR"(
-                                                       |
-                                                        \.
-                                                        /|.
-                                                      /  `|.
-                                                    /     |.
-                                                  /       |.
-                                                /         `|.
-                                              /            |.
-                                            /              |.
-                                          /                |.
-     __                                 /                  `|.
-      -\                              /                     |.
-        \\                          /                       |.
-          \\                      /                         |.
-           \|                   /                           |\
-             \#####\          /                             ||
-         ==###########>     /                               ||
-          \##==      \    /                                 ||
-     ______ =       =|__/___                                ||
- ,--' ,----`-,__ ___/'  --,-`-==============================##==========>
-\               '        ##_______ ______   ______,--,____,=##,__
- `,    __==    ___,-,__,--'#'  ==='      `-'              | ##,-/
-   `-,____,---'       \####\              |        ____,--\_##,/
-       #_              |##   \  _____,---==,__,---'         ##
-        #              ]===--==\                            ||
-        #,             ]         \                          ||
-         #_            |           \                        ||
-          ##_       __/'             \                      ||
-           ####='     |                \                    |/
-            ###       |                  \                  |.
-            ##       _'                    \                |.
-           ###=======]                       \              |.
-          ///        |                         \           ,|.
-          //         |                           \         |.
-                                                   \      ,|.
-                                                     \    |.
-                                                       \  |.
-                                                         \|.
-                                                         /.
-                                                        |
-    )" << std::endl;
+    std::cout << "                                                       | " << std::endl;
+    std::cout << "                                                        \\." << std::endl;
+    std::cout << "                                                        /|." << std::endl;
+    std::cout << "                                                      /  `|." << std::endl;
+    std::cout << "                                                    /     |." << std::endl;
+    std::cout << "                                                  /       |." << std::endl;
+    std::cout << "                                                /         `|." << std::endl;
+    std::cout << "                                              /            |." << std::endl;
+    std::cout << "                                            /              |." << std::endl;
+    std::cout << "                                          /                |." << std::endl;
+    std::cout << "     __                                 /                  `|." << std::endl;
+    std::cout << "      -\\                              /                     |." << std::endl;
+    std::cout << "        \\\\                          /                       |." << std::endl;
+    std::cout << "          \\\\                      /                         |." << std::endl;
+    std::cout << "           \\|                   /                           |\\ " << std::endl;
+    std::cout << "             \\#####\\          /                             || " << std::endl;
+    std::cout << "         ==###########>     /                               || " << std::endl;
+    std::cout << "          \\##==      \\    /                                 || " << std::endl;
+    std::cout << "     ______ =       =|__/___                                || " << std::endl;
+    std::cout << " ,--' ,----`-,__ ___/'  --,-`-==============================##==========>  " << std::endl;
+    std::cout << "\\               '        ##_______ ______   ______,--,____,=##,__ " << std::endl;
+    std::cout << " `,    __==    ___,-,__,--'#'  ==='      `-'              | ##,-/ " << std::endl;
+    std::cout << "   `-,____,---'       \\####\\              |        ____,--\\_##,/ " << std::endl;
+    std::cout << "       #_              |##   \\  _____,---==,__,---'         ## " << std::endl;
+    std::cout << "        #              ]===--==\\                            || " << std::endl;
+    std::cout << "        #,             ]         \\                          || " << std::endl;
+    std::cout << "         #_            |           \\                        || " << std::endl;
+    std::cout << "          ##_       __/'             \\                      || " << std::endl;
+    std::cout << "           ####='     |                \\                    |/ " << std::endl;
+    std::cout << "            ###       |                  \\                  |. " << std::endl;
+    std::cout << "            ##       _'                    \\                |. " << std::endl;
+    std::cout << "           ###=======]                       \\              |. " << std::endl;
+    std::cout << "          ///        |                         \\           ,|. " << std::endl;
+    std::cout << "          //         |                           \\         |. " << std::endl;
+    std::cout << "                                                   \\      ,|. " << std::endl;
+    std::cout << "                                                     \\    |. " << std::endl;
+    std::cout << "                                                       \\  |. " << std::endl;
+    std::cout << "                                                         \\|. " << std::endl;
+    std::cout << "                                                         /. " << std::endl;
+    std::cout << "                                                        | " << std::endl;
 
 }
 
 void ASCImages::oneSwordRoyalWarrior() {
-    std::cout << LR"(
-      _,.
-    ,` -.)
-   ( _/-\\-._
-  /,|`--._,-^|            ,
-  \_| |`-._/||          ,'|
-    |  `-, / |         /  /
-    |     || |        /  /
-     `r-._||/   __   /  /
- __,-<_     )`-/  `./  /
-'  \   `---'   \   /  /
-    |           |./  /
-    /           //  /
-\_/' \         |/  /
- |    |   _,^-'/  /
- |    , ``  (\/  /_
-  \,.->._    \X-=/^
-  (  /   `-._//^`
-   `Y-.____(__}
-    |     {__)
-          ()
-    )" << std::endl;
+    std::cout << "       _,. " << std::endl;
+    std::cout << "     ,` -.) " << std::endl;
+    std::cout << "    ( _/-\\-._ " << std::endl;
+    std::cout << "   /,|`--._,-^|            , " << std::endl;
+    std::cout << "   \\_| |`-._/||          ,'| " << std::endl;
+    std::cout << "     |  `-, / |         /  /" << std::endl;
+    std::cout << "     |     || |        /  /" << std::endl;
+    std::cout << "      `r-._||/   __   /  /" << std::endl;
+    std::cout << "  __,-<_     )`-/  `./  /" << std::endl;
+    std::cout << " '  \\   `---'   \\   /  /" << std::endl;
+    std::cout << "     |           |./  /" << std::endl;
+    std::cout << "     /           //  /" << std::endl;
+    std::cout << " \\_/' \\         |/  /" << std::endl;
+    std::cout << "  |    |   _,^-'/  /" << std::endl;
+    std::cout << "  |    , ``  (\\/  /_" << std::endl;
+    std::cout << "   \\,.->._    \\X-=/^" << std::endl;
+    std::cout << "   (  /   `-._//^`" << std::endl;
+    std::cout << "    `Y-.____(__}" << std::endl;
+    std::cout << "     |     {__)" << std::endl;
+    std::cout << "           ()" << std::endl;
 }
 // ------------------------
 // Art by Joan G. Stark
 void ASCImages::oneSwordRoyalWarriorGuardPosition() {
-    std::cout << LR"(
-              {}
-             {{}}
-             {{}}
-              {}
-            .-''-.
-           /  __  \
-          /.-'  '-.\
-          \::.||.::/
-           \'.||.'/
-      __ ___) \/ (___ __
-    .'   \\        //   `.
-   /     | '-.__.-' |     \
-   |     |  '::::'  |     |
-   |    /    '::'    \    |
-   |_.-;\     __     /;-._|
-   \.'^`\\    \/    //`^'./
-   /   _.-._ _||_ _.-._   \
-  `\___\    '-..-'    /___/`
-       /'---.  `\.---'\
-      ||    |`\\\|    ||
-      ||    | || |    ||
-      |;.__.' || '.__.;|
-      |       ||       |
-      {{{{{{{{||}}}}}}}}
-       |      ||      |
-       |.-==-.||.-==-.|
-       <.    .||.    .>
-        \'=='/||\'=='/
-        |   / || \   |
-        |   | || |   |
-        |   | || |   |
-        /^^\| || |/^^\
-       /   .' || '.   \
-      /   /   ||   \   \
-     (__.'    \/    '.__)
-    )" << std::endl;
+    std::cout << "              {}" << std::endl;
+    std::cout << "             {{}}" << std::endl;
+    std::cout << "             {{}}" << std::endl;
+    std::cout << "              {}" << std::endl;
+    std::cout << "            .-''-." << std::endl;
+    std::cout << "           /  __  \\" << std::endl;
+    std::cout << "          /.-'  '-.\\" << std::endl;
+    std::cout << "          \\::.||.::/" << std::endl;
+    std::cout << "           \\'.||.'/" << std::endl;
+    std::cout << "      __ ___) \\/ (___ __" << std::endl;
+    std::cout << "    .'   \\        //   `." << std::endl;
+    std::cout << "   /     | '-.__.-' |     \\" << std::endl;
+    std::cout << "   |     |  '::::'  |     |" << std::endl;
+    std::cout << "   |    /    '::'    \\    |" << std::endl;
+    std::cout << "   |_.-;\\     __     /;-._|" << std::endl;
+    std::cout << "   \\.'^`\\    \\/    //`^'./" << std::endl;
+    std::cout << "   /   _.-._ _||_ _.-._   \\" << std::endl;
+    std::cout << "  `\\___\\    '-..-'    /___/`" << std::endl;
+    std::cout << "       /'---.  `\\.---'\\" << std::endl;
+    std::cout << "      ||    |`\\\\|    ||" << std::endl;
+    std::cout << "      ||    | || |    ||" << std::endl;
+    std::cout << "      |;.__.' || '.__.;|" << std::endl;
+    std::cout << "      |       ||       |" << std::endl;
+    std::cout << "      {{{{{{{{||}}}}}}}}" << std::endl;
+    std::cout << "       |      ||      |" << std::endl;
+    std::cout << "       |.-==-.||.-==-.|" << std::endl;
+    std::cout << "       <.    .||.    .>" << std::endl;
+    std::cout << "        \\=='/||\\=='/" << std::endl;
+    std::cout << "        |   / || \\   |" << std::endl;
+    std::cout << "        |   | || |   |" << std::endl;
+    std::cout << "        |   | || |   |" << std::endl;
+    std::cout << "        /^^\\| || |/^^\\" << std::endl;
+    std::cout << "       /   .' || '.   \\" << std::endl;
+    std::cout << "      /   /   ||   \\   \\" << std::endl;
+    std::cout << "     (__.'    \\/    '.__)" << std::endl;
+
 }
 // ------------------------
 // ART BY T.L.G.
 void ASCImages::showMontStLyonel() {
-    std::cout << LR"(
-                    |>>>                        |>>>
-                    |                           |
-                _  _|_  _                   _  _|_  _
-               | |_| |_| |                 | |_| |_| |
-               \  .      /                 \ .    .  /               /`\
-                \    ,  /                   \    .  /          \,/   
-                 | .   |_   _   _   _   _   _| ,   |       \,/      \,/
-                 |    .| |_| |_| |_| |_| |_| |  .  |          \,/
-                 | ,   | .    .     .      . |    .|              /`\
-                 |   . |  .     . .   .  ,   |.    |
-     ___----_____| .   |.   ,  _______   .   |   , |---~_____
-_---~            |     |  .   /+++++++\    . | .   |         ~---_
-                 |.    | .    |+++++++| .    |   . |              ~-_
-              __ |   . |   ,  |+++++++|.  . _|__   |                 ~-_
-     ____--`~    '--~~__ .    |++++ __|----~    ~`---,              ___^~-__
--~--~                   ~---__|,--~'                  ~~----_____-~'   `~----~
-    )" << std::endl;
+    std::cout << "                    |>>>                        |>>>" << std::endl;
+    std::cout << "                    |                           |" << std::endl;
+    std::cout << "                _  _|_  _                   _  _|_  _" << std::endl;
+    std::cout << "               | |_| |_| |                 | |_| |_| |" << std::endl;
+    std::cout << "               \\  .      /                 \\ .    .  /               /`\\" << std::endl;
+    std::cout << "                \\    ,  /                   \\    .  /          \\,/   " << std::endl;
+    std::cout << "                 | .   |_   _   _   _   _   _| ,   |       \\,/      \\,/" << std::endl;
+    std::cout << "                 |    .| |_| |_| |_| |_| |_| |  .  |          \\,/" << std::endl;
+    std::cout << "                 | ,   | .    .     .      . |    .|              /`\\" << std::endl;
+    std::cout << "                 |   . |  .     . .   .  ,   |.    |" << std::endl;
+    std::cout << "     ___----_____| .   |.   ,  _______   .   |   , |---~_____" << std::endl;
+    std::cout << "_---~            |     |  .   /++++++\\\\    . | .   |         ~---_" << std::endl;
+    std::cout << "                 |.    | .    |+++++++| .    |   . |              ~-_" << std::endl;
+    std::cout << "              __ |   . |   ,  |+++++++|.  . _|__   |                 ~-_" << std::endl;
+    std::cout << "     ____--`~    '--~~__ .    |+++++++|----~    ~`---,              ___^~-__" << std::endl;
+    std::cout << "-~--~                   ~---__|,--~'  |                ~~----_____-~'   `~----~" << std::endl;
+
 }
 // ------------------------
 // Art by Lukasz Tyrala
-void ASCImages::showZafirasKingdom() {
-    std::cout << LR"(
-                  [\
-                  |\)                                ____
-                  |                               __(_   )__
-                  Y\          ___               _(          )
-                 T  \       __)  )--.          (     )-----`
-                J    \   ,-(         )_         `---'
-               Y/T`-._\ (     (       _)                 __
-               /[|   ]|  `-(__  ___)-`  |\          ,-(  __)
-               | |    |      (__)       J'         (     )
-   _           | |  ] |    _           /;\          `-  '
-  (,,)        [| |    |    L'         /;  \
-             /||.| /\ |   /\         /.,-._\        ___ _
-            /_|||| || |  /  \        | |{  |       (._.'_)
-  L/\       | \| | '` |_ _ {|        | | U |   /\
- /v^v\/\   `|  Y | [  '-' '--''-''-"-'`'   | ,`^v\ /\,`\
-/ ,'./  \.` |[   |       [     __   L    ] |      /^v\  \
-,'     `    |    |           ,`##Y.   ]    |___Y Y____,_,,_,,_
---   -----.-(] [ |   ]     o/####U|o      ]|| /`-, Y   _   Y  Y
-   Y Y  --;`~T   |      }   \####U|[\ _,.-(^) ,-'  _  (^)__  _
-  Y  YY   ;'~~l  |   L     [|\###U'E'\  \ \Y-` _  (^) _Y  _
- Y  Y Y   ;\~~/\{| [      _,'-\`= = '.\_ ,`   (^)(^) (^) (^)
-     --   ;\~~~/\|  _,.-'`_  `.\_..-'"  _ . ,_ Y_ Y_ _Y  _Y__
-    _    _; \~~( Y``   Y (^) / `,      (^)      _   (^) (^)
-   (^)  (^)`._~ /  L \  _.Y'`  _  ` --  Y - - -(^) - Y - Y -
-    Y    Y    `'--..,-'`      (^)   _  -    _   Y ____
-      --           _    _ --   Y   (^)   _ (^)  ===   ----
-          __   -  (^)  (^)      --- Y   (^) Y
-      _            Y    Y                Y             
-    )" << std::endl;
+void ASCImages::SensFortresskingdom() {
+std::cout << "                  [\\ " << std::endl;
+std::cout << "                  |\\)                                ____ " << std::endl;
+std::cout << "                  |                               __(_   )__ " << std::endl;
+std::cout << "                  Y\\          ___               _(          ) " << std::endl;
+std::cout << "                 T  \\       __)  )--.          (     )-----` " << std::endl;
+std::cout << "                J    \\   ,-(         )_         `---' " << std::endl;
+std::cout << "               Y/T`-._\\ (     (       _)                 __ " << std::endl;
+std::cout << "               /[|   ]|  `-(__  ___)-`  |\\          ,-(  __) " << std::endl;
+std::cout << "               | |    |      (__)       J'         (     ) " << std::endl;
+std::cout << "   _           | |  ] |    _           /;\\          `-  ' " << std::endl;
+std::cout << "  (,,)        [| |    |    L'         /;  \\ " << std::endl;
+std::cout << "             /||.| /\\ |   /\\         /.,-._\\        ___ _ " << std::endl;
+std::cout << "            /_|||| || |  /  \\        | |{  |       (._.'_) " << std::endl;
+std::cout << "  L/\\       | \\| | '` |_ _ {|        | | U |   /\\ " << std::endl;
+std::cout << " /v^v\\/\\   `|  Y | [  '-' '--''-''-\"-'`'   | ,v\\ /\\,\\ " << std::endl;
+std::cout << "/ ,'./  \\.` |[   |       [     __   L    ] |      /^v\\  \\ " << std::endl;
+std::cout << ",'     `    |    |           ,`##Y.   ]    |___Y Y____,_,,_,,_ " << std::endl;
+std::cout << "--   -----.-(] [ |   ]     o/####U|o      ]|| /`-, Y   _   Y  Y " << std::endl;
+std::cout << "   Y Y  --;`~T   |      }   \\####U|[\\ _,.-(^) ,-'  _  (^)__  _ " << std::endl;
+std::cout << "  Y  YY   ;'~~l  |   L     [|\\###U'E'\\  \\ \\Y-` _  (^) _Y  _ " << std::endl;
+std::cout << " Y  Y Y   ;\\~~/\\{| [      _,'-\\`= = '.\\_ ,`   (^)(^) (^) (^) " << std::endl;
+std::cout << "     --   ;\\~~~/\\|  _,.-'`_  `.\\_..-'\"  _ . ,_ Y_ Y_ _Y  _Y__ " << std::endl;
+std::cout << "    _    _; \\~~( Y``   Y (^) / `,      (^)      _   (^) (^) " << std::endl;
+std::cout << "   (^)  (^)`._~ /  L \\  _.Y'`  _  ` --  Y - - -(^) - Y - Y - " << std::endl;
+std::cout << "    Y    Y    `'--..,-'`      (^)   _  -    _   Y ____ " << std::endl;
+std::cout << "      --           _    _ --   Y   (^)   _ (^)  ===   ---- " << std::endl;
+std::cout << "          __   -  (^)  (^)      --- Y   (^) Y " << std::endl;
+std::cout << "      _            Y    Y                Y              " << std::endl;
 }
 
 void ASCImages::showPosisonedWine() {
@@ -229,7 +221,17 @@ void ASCImages::showCow() {
     std::cout << "        `\\\\/`~(, '()      ('          " << std::endl;                              
     std::cout << "         /(O) \\   _,.-.,_)           " << std::endl;                             
     std::cout << "        //  \\ `\\'`      /            " << std::endl;                            
-    std::cout << "  jgs  / |  ||   `\"\"\"\"~\"`             " << std::endl;                           
+    std::cout << "       / |  ||   `\"\"\"\"~\"`             " << std::endl;                           
     std::cout << "     /'  |__||                        " << std::endl;                
     std::cout << "           `o                         " << std::endl;         
 }
+
+// void ASCImages::testPrintAll() {
+//     ladinoAttack();
+//     oneSwordRoyalWarrior();
+//     oneSwordRoyalWarriorGuardPosition();
+//     showMontStLyonel();
+//     SensFortresskingdom();
+//     showPosisonedWine();
+//     showCow();
+// }

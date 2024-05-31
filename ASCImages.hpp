@@ -9,7 +9,9 @@ class ASCImages {
     static void oneSwordRoyalWarrior();
     static void oneSwordRoyalWarriorGuardPosition();
     static void showMontStLyonel();
-    static void showZafirasKingdom();
+    static void SensFortresskingdom();
     static void showPosisonedWine();
     static void showCow();
+
+    // static void testPrintAll();
 };
