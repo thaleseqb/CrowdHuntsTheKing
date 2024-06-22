@@ -12,6 +12,7 @@ class ASCImages {
     static void SensFortresskingdom();
     static void showPosisonedWine();
     static void showCow();
+    static void showKing();
 
-    // static void testPrintAll();
+    static void testPrintAll();
 };

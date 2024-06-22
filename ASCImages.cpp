@@ -226,12 +226,35 @@ void ASCImages::showCow() {
     std::cout << "           `o                         " << std::endl;         
 }
 
-// void ASCImages::testPrintAll() {
-//     ladinoAttack();
-//     oneSwordRoyalWarrior();
-//     oneSwordRoyalWarriorGuardPosition();
-//     showMontStLyonel();
-//     SensFortresskingdom();
-//     showPosisonedWine();
-//     showCow();
-// }
+// Art by Joan G. Stark
+void ASCImages::showKing() {
+std::cout << "                   _.--.    .--._ " << std::endl;
+std::cout << "                 .\"  .\"      \".  \". " << std::endl;
+std::cout << "                ;  .\"    /\\    \".  ; " << std::endl;
+std::cout << "                ;  '._,-/  \\-,_.`  ; " << std::endl;
+std::cout << "                \\  ,`  / /\\ \\  `,  / " << std::endl;
+std::cout << "                 \\/    \\/  \\/    \\/ " << std::endl;
+std::cout << "                 ,=_    \\/\\/    _=, " << std::endl;
+std::cout << "                 |  \"_   \\/   _\"  | " << std::endl;
+std::cout << "                 |_   '\"-..-\"'   _| " << std::endl;
+std::cout << "                 | \"-.        .-\" | " << std::endl;
+std::cout << "                 |    \"\\    /\"    | " << std::endl;
+std::cout << "                 |      |  |      | " << std::endl;
+std::cout << "         ___     |      |  |      |     ___ " << std::endl;
+std::cout << "     _,-\",  \",   '_     |  |     _'   ,\"  ,\"-,_ " << std::endl;
+std::cout << "   _(  \\  \\   \"=--\"-.   |  |  .-\"--=\"/   /  /  )_ " << std::endl;
+std::cout << " ,\"  \\  \\  \\   \\      \"-'--'-\"      /   /  /  /  \". " << std::endl;
+std::cout << "!     \\  \\  \\   \\                  /   /  /  /     ! " << std::endl;
+std::cout << ":      \\  \\  \\   \\                /   /  /  /      TK " << std::endl;
+}
+
+void ASCImages::testPrintAll() {
+    ladinoAttack();
+    oneSwordRoyalWarrior();
+    oneSwordRoyalWarriorGuardPosition();
+    showMontStLyonel();
+    SensFortresskingdom();
+    showPosisonedWine();
+    showCow();
+    showKing();
+}

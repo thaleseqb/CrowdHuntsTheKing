@@ -1,7 +1,13 @@
 #include "initMethods.hpp"
+#include "Dialogs.hpp"
+#include <string>
+#include <cctype>
+#include <vector>
+
+short HuntingKingGame::numberOfInimethods = 2;
 
 // Font Name: Delta
-void HuntingKingGame::printInitGame(int spaceBeetwen) {
+void HuntingKingGame::printInitGame(int spaceBetween) {
 
 std::cout << "__/\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_____/\\\\\\\\\\\\\\\\\\_____/\\\\\\\\\\\\\\\\\\\\\\\\\\____/\\\\\\______________/\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\__/\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_______/\\\\\\\\\\_______/\\\\\\\\\\\\\\\\\\\\\\\\\\___          " <<std::endl;
 std::cout << " _\\///////\\\\\\/////____/\\\\\\\\\\\\\\\\\\\\\\\\\\__\\/\\\\\\/////////\\\\\\_\\/\\\\\\_____________\\/\\\\\\///////////__\\///////\\\\\\/////______/\\\\\\///\\\\\\____\\/\\\\\\/////////\\\\\\_         " <<std::endl;
@@ -22,7 +28,7 @@ std::cout << "       ___________________________________________________\\/\\\\\
 std::cout << "        ___________________________________________________\\/\\\\\\______\\//\\\\\\_\\/\\\\\\_____________\\//\\\\\\\\\\\\\\\\\\\\\\\\/__________________________________________  " <<std::endl;
 std::cout << "         ___________________________________________________\\///________\\///__\\///_______________\\////////////____________________________________________" <<std::endl;
 
-    for (int idx = 0; idx < spaceBeetwen; idx++) {
+    for (int idx = 0; idx < spaceBetween; idx++) {
         std::cout << std::endl;
     }
 
@@ -73,10 +79,44 @@ std::cout << "                                                          /       
 
 };
 
-void HuntingKingGame::printInit() {
-    printInitGame(3);
-    printGamesName();
-
+void HuntingKingGame::initMethodSwitcher(int methodIndex) {
+    switch (methodIndex) {
+    
+        case 0:
+            printInitGame(3);
+            break;
+        
+        case 1:
+            printGamesName();
+            break;
+    }
 }
 
+void HuntingKingGame::seeYouLatter(const char* quitKey, std::string& playerKeyWord) {
+    if ( (int) std::tolower(*quitKey) == std::tolower((int) playerKeyWord[0])) {
+        std::cout << "You should be tired, better rest a little, see ya" << std::endl;
+        exit(1);
+    }
+}
 
+void HuntingKingGame::printInit() {
+    for (int idx = 0; idx < numberOfInimethods; idx++) {
+        std::cout << "Press q to quit game or any key to continue" << std::endl;
+
+        std::string playerKeyWord;
+        std::cin >> playerKeyWord;
+        const char *quitKey = "q";
+
+        seeYouLatter(quitKey, playerKeyWord);
+        initMethodSwitcher(idx);
+    }
+}
+
+void HuntingKingGame::storyTeller(Dialogs& dialog) {
+    std::vector<std::string> textArray = dialog.getTextArray();
+    std::map<std::string,int> textCaseSwitcher = Dialogs::getTextFormatSwitcher();
+
+    for (int idx = 0; idx < textArray.size(); idx++) {
+        Dialogs::selectCaseForTextBoxes(textArray[idx], textCaseSwitcher);
+    }
+}

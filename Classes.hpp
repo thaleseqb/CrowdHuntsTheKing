@@ -17,7 +17,7 @@ private:
     void defineVigor(int vigorBar);
     void defineDexterity(int dexterityAtt);
     void defineStrength(int strengthAtt);
-    void defineIntelloigence(int IntAtt);
+    void defineIntelligence(int IntAtt);
     void defineLuck(int LuckAtt);
     void initCharacter(int vigorBar, int dexterityAtt, int strengthAtt, int IntAtt, int LuckAtt);
     void constructCharacter(std::string userType, std::map<std::string,int> mapUser);
@@ -32,6 +32,12 @@ public:
     int getStrength();
     int getIntelligence();
     int getLuck();
+    std::string getClass();
+    void setVigor(int vigor);
+    void setDexterity(int dexterity);
+    void setStrength(int strength);
+    void setIntelligence(int intelligence);
+    void setLuck(int luck);
     void chooseCharacterType(std::string& userType);
     void showAttributes();
     static void showAvailableClasses();

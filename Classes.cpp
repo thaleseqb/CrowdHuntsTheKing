@@ -42,6 +42,10 @@ int Classes::getLuck() {
     return luck;
 }
 
+std::string Classes::getClass() {
+    return userType;
+}
+
 void Classes::defineVigor(int vigorBar) {
     vigor = vigorBar;
 }
@@ -57,16 +61,31 @@ void Classes::defineLuck(int LuckAtt) {
     luck = LuckAtt;
 
 }
-void Classes::defineIntelloigence(int IntAtt) {
+void Classes::defineIntelligence(int IntAtt) {
     intelligence = IntAtt;
+}
 
+void Classes::setVigor(int vigor) {
+    this->vigor = vigor;
+}
+void Classes::setDexterity(int dexterity) {
+    this->dexterity = dexterity;
+}
+void Classes::setStrength(int strength) {
+    this->strength = strength;
+}
+void Classes::setIntelligence(int intelligence) {
+    this->intelligence = intelligence;
+}
+void Classes::setLuck(int luck) {
+    this->luck = luck;
 }
 
 void Classes::initCharacter(int vigorBar, int dexterityAtt, int strengthAtt, int IntAtt, int LuckAtt) {
     defineVigor(vigorBar);
     defineDexterity(dexterityAtt);
     defineStrength(strengthAtt);
-    defineIntelloigence(IntAtt);
+    defineIntelligence(IntAtt);
     defineLuck(LuckAtt);
 }
 

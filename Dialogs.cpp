@@ -1,8 +1,36 @@
 #include "Dialogs.hpp"
+#include "TextDialog.hpp"
 #include <cmath>
 
 std::string Dialogs::textCase;
 std::map<std::string,int> Dialogs::textFormatSwitcher = {{"small",0},{"medium",1},{"big",2}};
+
+Dialogs::Dialogs(int textArrayIndex): textArrayIndex(textArrayIndex) {
+    dialogCaseSwitcher(textArrayIndex);
+}
+
+void Dialogs::dialogCaseSwitcher(int dialogIndex) {
+    switch (dialogIndex) {
+    
+    case 0:
+        textArray = TextDialog::getInitHistory();
+        break;
+    case 1:
+        textArray = TextDialog::getMediumHistory();
+        break;
+    case 2:
+        textArray = TextDialog::getFinalHistory();
+        break;
+    }
+}
+
+std::vector<std::string> Dialogs::getTextArray() {
+    return textArray;
+}
+
+void Dialogs::setTextArray(std::vector<std::string> newTextArray) {
+    textArray = newTextArray;
+}
 
 void Dialogs::printDesign(std::string dialog) {
     for (int idx = 0; idx < (int) stringShapeAnalysis(dialog) + 4; idx++) {
