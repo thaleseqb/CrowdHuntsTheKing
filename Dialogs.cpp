@@ -28,8 +28,8 @@ std::vector<std::string> Dialogs::getTextArray() {
     return textArray;
 }
 
-void Dialogs::setTextArray(std::vector<std::string> newTextArray) {
-    textArray = newTextArray;
+void Dialogs::setTextArray(int historyIndex) {
+    textArray = TextDialog::getHistoriesArray()[historyIndex];
 }
 
 void Dialogs::printDesign(std::string dialog) {

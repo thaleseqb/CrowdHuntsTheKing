@@ -3,8 +3,6 @@
 
 class ASCImages {
     private:
-
-    public:
     static void ladinoAttack();
     static void oneSwordRoyalWarrior();
     static void oneSwordRoyalWarriorGuardPosition();
@@ -14,5 +12,7 @@ class ASCImages {
     static void showCow();
     static void showKing();
 
+    public:
+    static void imagesSwitcher(int imageIndex);
     static void testPrintAll();
 };

@@ -23,5 +23,5 @@ class Dialogs {
     static void selectCaseForTextBoxes(std::string dialog, std::map<std::string,int> textFormatSwitcher);
     static std::map<std::string,int> getTextFormatSwitcher();
     std::vector<std::string> getTextArray();
-    void setTextArray(std::vector<std::string> newTextArray);
+    void setTextArray(int historyIndex);
 };

@@ -1,5 +1,6 @@
 #include "initMethods.hpp"
 #include "Dialogs.hpp"
+#include "ASCImages.hpp"
 #include <string>
 #include <cctype>
 #include <vector>
@@ -92,7 +93,10 @@ void HuntingKingGame::initMethodSwitcher(int methodIndex) {
     }
 }
 
-void HuntingKingGame::seeYouLatter(const char* quitKey, std::string& playerKeyWord) {
+void HuntingKingGame::seeYouLatter(const char* quitKey) {
+    std::cin.clear();
+    std::string playerKeyWord;
+    std::cin >> playerKeyWord;
     if ( (int) std::tolower(*quitKey) == std::tolower((int) playerKeyWord[0])) {
         std::cout << "You should be tired, better rest a little, see ya" << std::endl;
         exit(1);
@@ -102,12 +106,7 @@ void HuntingKingGame::seeYouLatter(const char* quitKey, std::string& playerKeyWo
 void HuntingKingGame::printInit() {
     for (int idx = 0; idx < numberOfInimethods; idx++) {
         std::cout << "Press q to quit game or any key to continue" << std::endl;
-
-        std::string playerKeyWord;
-        std::cin >> playerKeyWord;
-        const char *quitKey = "q";
-
-        seeYouLatter(quitKey, playerKeyWord);
+        seeYouLatter("q");
         initMethodSwitcher(idx);
     }
 }
@@ -117,6 +116,10 @@ void HuntingKingGame::storyTeller(Dialogs& dialog) {
     std::map<std::string,int> textCaseSwitcher = Dialogs::getTextFormatSwitcher();
 
     for (int idx = 0; idx < textArray.size(); idx++) {
+        std::cout << "Press q to quit game or any key to continue" << std::endl;
+        seeYouLatter("q");
+        
         Dialogs::selectCaseForTextBoxes(textArray[idx], textCaseSwitcher);
+        ASCImages::imagesSwitcher(idx);
     }
 }

@@ -248,6 +248,23 @@ std::cout << "!     \\  \\  \\   \\                  /   /  /  /     ! " << std:
 std::cout << ":      \\  \\  \\   \\                /   /  /  /      TK " << std::endl;
 }
 
+void ASCImages::imagesSwitcher(int imageIndex) {
+    switch (imageIndex)
+    {
+    case 0:
+        showKing();
+        break;
+    
+    case 1:
+        SensFortresskingdom();
+        break;
+    
+    case 2:
+        oneSwordRoyalWarrior();
+        break;
+    }
+}
+
 void ASCImages::testPrintAll() {
     ladinoAttack();
     oneSwordRoyalWarrior();

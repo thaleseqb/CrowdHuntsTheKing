@@ -14,7 +14,6 @@ void printMenu() {
 
 int main(int argc, char *argv[]) {
 
-
     HuntingKingGame::printInit();
     std::map<std::string,int> textCaseSwitcher = Dialogs::getTextFormatSwitcher();
 
@@ -24,7 +23,6 @@ int main(int argc, char *argv[]) {
     classe.showAttributes();
 
     Dialogs dialog(0);
-
     HuntingKingGame::storyTeller(dialog);
 
     // ASCImages::testPrintAll();

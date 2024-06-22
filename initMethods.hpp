@@ -7,7 +7,7 @@ private:
     static short numberOfInimethods;
     static void printInitGame(int spaceBeetwen);
     static void initMethodSwitcher(int methodIndex);
-    static void seeYouLatter(const char * quitKey, std::string& playerKeyWord);
+    static void seeYouLatter(const char * quitKey);
 public:
     static void printInit();
     static void storyTeller(Dialogs& dialog);
